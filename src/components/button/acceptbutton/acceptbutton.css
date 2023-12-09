@@ -1,0 +1,11 @@
+
+button {
+    background-color: aqua;  /* tỉnh chỉnh màu của nút */
+    border: none;
+    font-size: 100px;/* tỉnh chỉnh kích thước của nút */
+    padding:32px 16px; /* thay đổi kích thước đệm của nút */ 
+    border-radius: 10%; /*Điều chính độ bo tròn của nút */
+    
+
+
+}

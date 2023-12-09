@@ -1,0 +1,1 @@
+export {default as Acceptbutton} from'./acceptbutton/Acceptbutton'
