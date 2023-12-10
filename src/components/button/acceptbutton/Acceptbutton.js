@@ -6,7 +6,9 @@ const Acceptbutton = (props) => {
     return (
         <div className="vrms_acceptbtn">
             <button  type="button" >
-                Accept {props.buttonText}
+               <span className="vrms_acceptbtn_span">
+                    Accept {props.buttonText}
+               </span>
             </button>
         </div>
     );

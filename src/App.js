@@ -6,7 +6,8 @@ import {Acceptbutton} from './components/button/index'
 const App = () => {
   return (
     <div className="App">
-      <Acceptbutton buttonText='Thang'/>
+      <Acceptbutton className="App_btn" buttonText='Thang'/>
+      <Acceptbutton buttonText='Khanh'/>
     </div>
   );
 }

@@ -1,11 +1,51 @@
 
-button {
+.vrms_acceptbtn button{
+    display: block; /* de chinh cho cac nut hien thi theo dang block */
+    width: 350px;
+    height: 100px;
     background-color: aqua;  /* tỉnh chỉnh màu của nút */
-    border: none;
-    font-size: 100px;/* tỉnh chỉnh kích thước của nút */
+    /*font-size: 45px;*//* tỉnh chỉnh kích thước của nút */
     padding:32px 16px; /* thay đổi kích thước đệm của nút */ 
-    border-radius: 10%; /*Điều chính độ bo tròn của nút */
-    
+    border-radius: 25cqi; /*Điều chính độ bo tròn của nút */
+    border: 2px solid red; /* dùng để điều chỉnh màu + độ dày của đường viền bo của nút */
+    transition-duration: 0.45s; /* dùng để điều chỉnh thời gian chuyển đôi style khi hover */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* dùng để chỉnh đổ bóng của nút */
+    opacity: 45%; /* dùng để chỉnh độ mờ của nsut */
+    cursor: pointer;
+}
 
+.vrms_acceptbtn button:hover{ /* hover dùng để style cho nút khi trỏ con chuột vào nút ( nhưng không bấm ) */
+    background-color: aqua;
+    opacity: 95%;
 
 }
+
+.vrms_acceptbtn_span {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s; 
+    font-size: medium;
+}
+
+.vrms_acceptbtn_span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.vrms_acceptbtn button:hover .vrms_acceptbtn_span {
+    padding-right: 25%;
+    color: black;
+}
+
+.vrms_acceptbtn button:hover .vrms_acceptbtn_span:after {
+    padding-right: 30%;
+    opacity: 1;
+    right: 0;
+}
+
