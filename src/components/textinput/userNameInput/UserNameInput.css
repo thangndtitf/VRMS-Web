@@ -1,0 +1,14 @@
+.usernamecontainer {
+    display: inline;
+}
+
+.usernamecontainer .usernamecontainer_input {
+    width: 250px;
+    height: 50px;
+    border: 10%;
+    padding: 12px 20px;
+}
+
+.usernamecontainer .usernamecontainer_input:focus{
+    background-color: #99FFFF;
+}
