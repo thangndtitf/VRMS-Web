@@ -1,3 +1,5 @@
+
+import './PassworldInput.css'
 const PassworldInput = () => {
     return (
         <div>
