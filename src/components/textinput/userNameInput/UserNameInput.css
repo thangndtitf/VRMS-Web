@@ -7,6 +7,7 @@
     height: 50px;
     border: 10%;
     padding: 12px 20px;
+    transition: 0.5s;
 }
 
 .usernamecontainer .usernamecontainer_input:focus{

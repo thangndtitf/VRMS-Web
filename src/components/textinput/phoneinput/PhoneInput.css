@@ -1,3 +1,14 @@
-.phoneinput_filed {
-    background-color: gray;
+.phoneinput_container{
+    display: inline;
+}
+
+.phoneinput_container .phoneinput_filed{
+    width: 250px;
+    height: 50px;
+    border: 10%;
+    padding: 12px 20px;
+}
+
+.phoneinput_container .phoneinput_filed:focus{
+    background-color: #99FFFF;
 }
