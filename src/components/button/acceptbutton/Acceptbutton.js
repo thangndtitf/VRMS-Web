@@ -1,17 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 
 import './acceptbutton.css'
 
-const Acceptbutton = (props) => {
-    return (
-        <div className="vrms_acceptbtn">
-            <button  type="button" >
-               <span className="vrms_acceptbtn_span">
-                    Accept {props.buttonText}
-               </span>
-            </button>
-        </div>
-    );
+class Acceptbutton extends Component {
+    render(){
+        return (
+            <div className="vrms_acceptbtn">
+                <button  type="button" >
+                   <span className="vrms_acceptbtn_span">
+                        Accept {this.props.buttonText}
+                   </span>
+                </button>
+            </div>
+        );
+    }
 }
 
 

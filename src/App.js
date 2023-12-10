@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 
 import {Acceptbutton} from './components/button/index'
-import {UserNameInput , PassworldInput} from './components/textinput/index'
+import {UserNameInput , PassworldInput, PhoneInput} from './components/textinput/index'
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
       <Acceptbutton buttonText='Khanh'/>
       <UserNameInput /> <br></br>
       <PassworldInput />
+      <PhoneInput/>
     </div>
   );
 }
