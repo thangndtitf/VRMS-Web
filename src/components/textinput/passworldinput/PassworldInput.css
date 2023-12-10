@@ -1,3 +1,14 @@
-.input_passworld {
-    background-color: aqua;
+.input_passworld_container {
+    display: inline;
+}
+
+.input_passworld_filed {
+    width: 250px;
+    height: 50px;
+    border: 10%;
+    padding: 12px 20px;
+}
+
+.input_passworld_container .input_passworld_filed:focus{
+    background-color: #99FFFF;
 }

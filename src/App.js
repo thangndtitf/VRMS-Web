@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
       <Acceptbutton className="App_btn" buttonText='Thang'/>
       <Acceptbutton buttonText='Khanh'/>
-      <UserNameInput />
+      <UserNameInput /> <br></br>
       <PassworldInput />
     </div>
   );
