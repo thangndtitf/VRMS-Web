@@ -39,12 +39,12 @@
 }
 
 .vrms_acceptbtn button:hover .vrms_acceptbtn_span {
-    padding-right: 25%;
+    padding-right: 20%;
     color: black;
 }
 
 .vrms_acceptbtn button:hover .vrms_acceptbtn_span:after {
-    padding-right: 30%;
+    padding-right: 20%;
     opacity: 1;
     right: 0;
 }

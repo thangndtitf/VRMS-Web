@@ -12,3 +12,8 @@
 .phoneinput_container .phoneinput_filed:focus{
     background-color: #99FFFF;
 }
+
+
+.phoneinput_container .phoneinput_filed:focus::after{
+    background-color: white;
+}
