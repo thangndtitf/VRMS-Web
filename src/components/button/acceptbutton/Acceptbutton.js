@@ -3,6 +3,12 @@ import React, { Component } from "react";
 import './acceptbutton.css'
 
 class Acceptbutton extends Component {
+
+    constructor(props){
+        super(props);
+        
+    }
+
     render(){
         return (
             <div className="vrms_acceptbtn">
