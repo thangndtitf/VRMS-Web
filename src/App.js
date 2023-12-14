@@ -3,6 +3,7 @@ import './App.css';
 
 import {Acceptbutton} from './components/button/index'
 import {UserNameInput , PassworldInput, PhoneInput} from './components/textinput/index'
+import Clock from './components/clock/Clock'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <UserNameInput /> <br></br>
       <PassworldInput />
       <PhoneInput/>
+      <Clock />
     </div>
   );
 }
