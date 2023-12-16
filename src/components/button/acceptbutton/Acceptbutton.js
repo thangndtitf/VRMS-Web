@@ -24,7 +24,7 @@ class Acceptbutton extends Component {
             <div className="vrms_acceptbtn">
                 <button  onClick={() => this.handleClick()} >  
                    <span className="vrms_acceptbtn_span">
-                        Accept is for  {this.props.buttonText}is :{this.state.isToggle ? 'On' : 'Off'} 
+                        Login is  {this.props.buttonText}is :{this.state.isToggle ? 'On' : 'Off'} 
                    </span>
                 </button>
             </div>

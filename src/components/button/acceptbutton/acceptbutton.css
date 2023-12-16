@@ -1,9 +1,10 @@
 
 .vrms_acceptbtn button{
+    text-align: center;
     display: block; /* de chinh cho cac nut hien thi theo dang block */
-    width: 350px;
-    height: 100px;
-    background-color: aqua;  /* tỉnh chỉnh màu của nút */
+    width: 290px;
+    height: 75px;
+    background-color: #CCFF99;  /* tỉnh chỉnh màu của nút */
     /*font-size: 45px;*//* tỉnh chỉnh kích thước của nút */
     padding:32px 16px; /* thay đổi kích thước đệm của nút */ 
     border-radius: 25cqi; /*Điều chính độ bo tròn của nút */
@@ -15,12 +16,13 @@
 }
 
 .vrms_acceptbtn button:hover{ /* hover dùng để style cho nút khi trỏ con chuột vào nút ( nhưng không bấm ) */
-    background-color: aqua;
+    background-color: #CCFF66;
     opacity: 95%;
-
 }
 
 .vrms_acceptbtn_span {
+    size: auto;
+    font-size: auto;
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
