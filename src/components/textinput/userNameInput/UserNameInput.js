@@ -7,7 +7,9 @@ class UserNameInput extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isFocus : false
+            isFocus : false,
+            inputValue:''
+           
         }
         this.clickIsOnFocus = this.clickIsOnFocus.bind(this);
     }
@@ -18,17 +20,27 @@ class UserNameInput extends Component {
         }))
     }
 
+    handleInputChange(e){
+        const newValue = e.target.value;
+        this.setState({
+            inputValue : newValue
+        })
+        this.props.onValueChange(newValue);
+    }
+
     render(){
         return (
-            <div className="usernamecontainer" >
+            
                 <input 
                     type="text" 
                     className="usernamecontainer_input"  
+                    value={this.state.inputValue}
                     placeholder={this.state.isFocus ? '' : ' Please input your User Name'}
+                    onChange={this.handleInputChange}
                     onFocus={()=> this.clickIsOnFocus()}
                     onBlur={()=> this.clickIsOnFocus()}
                 />
-            </div>
+            
         );
     }
 }
