@@ -1,8 +1,6 @@
-.usernamecontainer {
-    display: inline;
-}
 
-.usernamecontainer .usernamecontainer_input {
+
+.usernamecontainer_input {
     width: 250px;
     height: 50px;
     border: 10%;
@@ -10,6 +8,6 @@
     transition: 0.5s;
 }
 
-.usernamecontainer .usernamecontainer_input:focus{
+.usernamecontainer_input:focus{
     background-color: #87CEFF;
 }
