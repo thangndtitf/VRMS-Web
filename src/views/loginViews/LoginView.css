@@ -1,32 +1,33 @@
-.form_login{
-    background-color: #CCCCCC;
-    align-items: center;
-    display: inline;
+.form_login_container{
+    background-image: url('../../assets/backgroundImage/backgroundimg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1000px;
     scroll-behavior: smooth;
 }
 
+h1{
+    color: wheat;    
+}
 
+.form_login{
+    display: inline;
+    
+}
 
 .form_login_username_input{
     padding-top: 20px;
     padding-bottom: 15px;
+    text-align: center;
+    border: 20%;
 }
 
 .form_login_password_input{
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .form_login_btn{
-    padding-left: 570px;
+    padding-left: 560px;
     padding-bottom: 100px;
-}
-
-.loginview_footer{
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%,
 }

@@ -4,6 +4,7 @@ import {UserNameInput , PassworldInput} from '../../components/textinput/index'
 import {LoginButton} from '../../components/button/index'
 import './LoginView.css'
 
+
 class LoginView extends Component{
     constructor(props){
         super(props);
@@ -40,7 +41,10 @@ class LoginView extends Component{
         const userName = this.state.userNameValues;
         const password = this.state.passwordValues;
         return (
-            <div>
+            <div className="form_login_container">
+                <h1>
+                    LOGIN FORM 
+                </h1>
                 <form className="form_login" onSubmit={this.alertUserName}>
                     <div className = 'form_login_username_input'>
                         <UserNameInput userName = {userName} onChangeUserName={this.handleChangeUserName} /> 
@@ -52,14 +56,10 @@ class LoginView extends Component{
                         <LoginButton />
                     </div>
                 </form>
-                <footer className="loginview_footer">
-                    <p >© 2023 Your Company. All rights reserved.</p>
-                </footer>
+              
             </div>
         )
     }
-
-
 }
 
 export default LoginView;
