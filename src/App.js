@@ -4,8 +4,8 @@ import './App.css';
 import {Acceptbutton, LoginButton} from './components/button/index'
 import {UserNameInput , PassworldInput, PhoneInput} from './components/textinput/index'
 import Clock from './components/clock/Clock'
-import NotFoundsPage from './views/errorViews/NotFoundsPage'
-import LoginView from './views/loginViews/LoginVIews'
+import {HomeView} from './views/index'
+import LoginView from './views/loginViews/LoginVIews';
 
 const App = () => {
   return (
@@ -17,7 +17,6 @@ const App = () => {
       <PhoneInput/>
       <Clock />
       <LoginButton/>
-      <NotFoundsPage errorCode='404' errorMessage='Not Found' />
       <LoginView />
     </div>
   );

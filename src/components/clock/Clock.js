@@ -27,15 +27,13 @@ class Clock extends Component{
     render(){
         return (
             <div>
-                <h1>
-                    It is a clock 
-                </h1>
-                <h2>
-                    Now is : {this.state.date.toLocaleTimeString()}
-                </h2>
+
+                <h3>
+                    Props of Clock is : {this.props.celsius}
+                </h3>
             </div>
         )
-    };
+    }
 }
 
 export default Clock

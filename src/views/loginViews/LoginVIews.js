@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 import {UserNameInput , PassworldInput} from '../../components/textinput/index'
 import {LoginButton} from '../../components/button/index'
+import Clock from '../../components/clock/Clock'
 import './LoginView.css'
-class LoginView extends Component{
 
+class LoginView extends Component{
     constructor(props){
         super(props);
         this.state = {
