@@ -12,37 +12,43 @@ class LoginView extends Component{
             passwordValues : '',
  
         };
-        this.textChangeHandle = this.textChangeHandle.bind(this);
         this.alertUserName = this.alertUserName.bind(this);
+        this.handleChangeUserName = this.handleChangeUserName.bind(this);
+        this.handleChangePassword = this.handleChangePassword.bind(this);
     }
     
-
-    textChangeHandle(event){
-        const { name, value } = event.target;
-   
-        this.setState(prevState =>({
-            ...prevState,
-            [name]: value
-         }))
+    handleChangeUserName(userName){
+        this.setState({
+            userNameValues: userName
+        })
     }
 
+    handleChangePassword(password){
+        this.setState({
+            passwordValues: password
+        })
+    }
+
+
+
     alertUserName(event){
-        
-        alert('A name was submitted: ' + this.state.userNameValues);
+        alert('A name was submitted: ' + this.state.userNameValues + ' password is : ' + this.state.passwordValues);
         event.preventDefault();
     }
 
     render(){
+        const userName = this.state.userNameValues;
+        const password = this.state.passwordValues;
         return (
             <div>
                 <form className="form_login" onSubmit={this.alertUserName}>
-                    <div className="form_login_username_input"  >
-                        <UserNameInput name='userNameValues' value='usernamevalue'  onChange={(event) => this.textChangeHandle(event)} />
+                    <div className = 'form_login_username_input'>
+                        <UserNameInput userName = {userName} onChangeUserName={this.handleChangeUserName} /> 
                     </div>
-                    <div className="form_login_password_input">
-                        <PassworldInput name='passwordValues' value='passwordvalue' onChange={(event) => this.textChangeHandle(event)}/>
+                    <div className = 'form_login_password_input'>
+                        <PassworldInput password = {password} onChangePassword= {this.handleChangePassword} />
                     </div>
-                    <div type="submit" className="form_login_btn">
+                    <div className='form_login_btn'>
                         <LoginButton />
                     </div>
                 </form>

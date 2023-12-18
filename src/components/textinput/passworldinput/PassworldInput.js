@@ -9,6 +9,8 @@ class PassworldInput extends Component{
             isFocus : false
         }
         this.clickIsOnFocus = this.clickIsOnFocus.bind(this);
+        this.handleChangePasswordInput = this.handleChangePasswordInput.bind(this);
+
     }
 
     clickIsOnFocus(){
@@ -17,7 +19,12 @@ class PassworldInput extends Component{
         }))
     }
 
+    handleChangePasswordInput(event){
+        this.props.onChangePassword(event.target.value);
+    }
+
     render(){
+        const password =this.props.password;
         return (
             <div className='input_passworld_container'>
                 <input 
@@ -26,6 +33,8 @@ class PassworldInput extends Component{
                     placeholder={this.state.isFocus? '':' Please input your Password' }
                     onFocus={()=>this.clickIsOnFocus()}
                     onBlur={()=>this.clickIsOnFocus()}
+                    onChange={this.handleChangePasswordInput}
+                    value={password}
                 />
             </div>
         );
