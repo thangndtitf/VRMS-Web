@@ -32,9 +32,7 @@ class UserNameInput extends Component {
                 <input 
                     type="text" 
                     className="usernamecontainer_input"  
-                    value={this.state.inputValue}
                     placeholder={this.state.isFocus ? '' : ' Please input your User Name'}
-                    onChange={this.handleInputChange}
                     onFocus={()=> this.clickIsOnFocus()}
                     onBlur={()=> this.clickIsOnFocus()}
                     onChange={this.handleChangeValue}
