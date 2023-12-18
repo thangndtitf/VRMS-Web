@@ -3,8 +3,6 @@ import './App.css';
 
 import {Acceptbutton, LoginButton} from './components/button/index'
 import {UserNameInput , PassworldInput, PhoneInput} from './components/textinput/index'
-import Clock from './components/clock/Clock'
-import {HomeView} from './views/index'
 import LoginView from './views/loginViews/LoginVIews';
 
 const App = () => {
@@ -15,7 +13,7 @@ const App = () => {
       <UserNameInput /> <br></br>
       <PassworldInput />
       <PhoneInput/>
-      <Clock />
+
       <LoginButton/>
       <LoginView />
     </div>
