@@ -1,3 +1,7 @@
+.form_login{
+   color: #888888;
+}
+
 .form_login_container{
     background-image: url('../../assets/backgroundImage/backgroundimg.jpg');
     background-size:cover;

@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import {UserNameInput , PassworldInput} from '../../components/textinput/index'
 import {LoginButton} from '../../components/button/index'
 import './LoginView.css'
+import Navbar from "../../components/navbars/Navbar";
+
 
 
 class LoginView extends Component{
@@ -41,7 +43,10 @@ class LoginView extends Component{
         const userName = this.state.userNameValues;
         const password = this.state.passwordValues;
         return (
-            <div className="form_login_container">
+            <div className="form_login">
+                <Navbar/>
+                <div className="form_login_container">
+                
                 <h1>
                     LOGIN FORM 
                 </h1>
@@ -57,6 +62,8 @@ class LoginView extends Component{
                     </div>
                 </form>
               
+            </div>
+        )
             </div>
         )
     }
