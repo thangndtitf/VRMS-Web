@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import InfoViewNavbar from '../inforViewNavbar/InfoViewNavbar'
+import InfoViewNavbar from '../../../components/inforViewNavbar/InfoViewNavbar'
 import  Navbar from '../../../components/navbars/Navbar'
 import {TextArenaInput} from '../../../components/textinput/index'
 import './infoViewPage.css'

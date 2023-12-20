@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 import './InfoViewNavbar.css'
-import customerLogo from '../../../assets/icons/customerlogo.png'
+import customerLogo from '../../assets/icons/customerlogo.png'
 class InfoViewNavbar extends Component{
     render() {
         return (
