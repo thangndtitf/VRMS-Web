@@ -1,0 +1,6 @@
+.InfoViewPage{
+    display: flex;
+    justify-content: space-between; /* Các phần tử sẽ căn cách nhau theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+

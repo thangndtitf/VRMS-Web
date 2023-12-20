@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
-import './UserNameInput.css'
-
-class UserNameInput extends Component {
-
+import './TextArenaInput.css'
+class TextArenaInput extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -19,27 +17,29 @@ class UserNameInput extends Component {
         this.setState(prevState => ({
             isFocus : !prevState.isFocus
         }))
+        
     }
 
     handleChangeValue(event){
-        this.props.onChangeUserName(event.target.value)
+        this.props.onChangeTextValue(event.target.value)
     }
 
     render(){
-        const userName = this.props.userName;
+        const inputValue = this.props.inputValue;
+        const inputName = this.props.inputName;
         return (
             
                 <input 
                     type="text" 
-                    className="usernamecontainer_input"  
-                    placeholder={this.state.isFocus ? '' : ' Please input your User Name'}
+                    className="text_input"  
+                    placeholder={this.state.isFocus ? true : ' Please input your ' + inputName}
                     onFocus={()=> this.clickIsOnFocus()}
                     onBlur={()=> this.clickIsOnFocus()}
                     onChange={this.handleChangeValue}
-                    value={userName}
+                    value={inputValue}
                 />
         );
     }
 }
 
-export default UserNameInput;
+export default TextArenaInput;

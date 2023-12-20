@@ -1,7 +1,9 @@
 import { Component } from "react";
 import {Routes, Route, Link} from 'react-router-dom'
 
-import logo from '../../assets/icons/ThangAva.jpg'; // Thay đường dẫn tới hình ảnh của bạn
+import logo from '../../assets/icons/HomePageLogo.png'; // Thay đường dẫn tới hình ảnh của bạn
+import customerLogo from '../../assets/icons/customerlogo.png'
+
 import './Navbar.css'
 class Navbar extends Component{
     constructor(props){
@@ -12,7 +14,9 @@ class Navbar extends Component{
         return(
             <nav className="navbar">
                 <div className="logo">
-                    <img src={logo} alt="Description of your image" />
+                    <Link to='/home' className="nav-item">
+                        <img src={logo} alt="Description of your image" />
+                    </Link>
                 </div>
                 <ul className="nav-list">
                     <li >
@@ -26,6 +30,9 @@ class Navbar extends Component{
                     </li>
                     <li >
                         <Link to='/' className="nav-item">Home Page</Link>
+                    </li>
+                    <li >
+                        <Link to='/information' className="nav-item"><img src={customerLogo} alt="Description of your image" /></Link>
                     </li>
                 </ul>
 
